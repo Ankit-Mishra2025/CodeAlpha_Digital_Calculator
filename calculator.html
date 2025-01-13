@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+
+    <script src="calculator.js" defer></script>
+
+</head>
+<body>
+   
+<div class="calculator">
+<div class="display" ><input type="text" id="display" placeholder="0"></div>
+
+    <div class="buttons">
+<div class="row1">
+    <button type="button" class="rowButton1" onclick="document.querySelector('#display').value=''">AC</button>
+    <button type="button" class="rowButton2" onclick="document.querySelector('#display').value=document.querySelector('#display').value.toString().slice(0,-1)">DE</button>
+    <button type="button" class="rowButton3" onclick="document.querySelector('#display').value+='.'">.</button>
+    <button type="button" class="rowButton4"  onclick="document.querySelector('#display').value+='/'">/</button>
+</div>
+
+
+
+
+<div class="row2">
+    <button type="button" class="rowButton" onclick="sinf()">Sin</button>
+    <button type="button" class="rowButton" onclick="cosf()">Cos</button>
+    <button type="button" class="rowButton" onclick="tanf()">Tan</button>
+    <button type="button" class="rowButton" onclick="document.querySelector('#display').value+='&radic'">&radic;</button>
+</div>
+
+<div class="row3">
+    <button class="rowButton" onclick="document.querySelector('#display').value+='9'" >9</button>
+    <button type="button" class="rowButton" onclick="document.querySelector('#display').value+='8'">8</button>
+    <button type="button" class="rowButton" onclick="document.querySelector('#display').value+='7'">7</button>
+    <button type="button" class="rowButton" onclick="document.querySelector('#display').value+='*'">*</button>
+</div>
+
+<div class="row4">
+    <button type="button" class="rowButton" onclick="document.querySelector('#display').value+='6'">6</button>
+    <button type="button" class="rowButton" onclick="document.querySelector('#display').value+='5'">5</button>
+    <button type="button" class="rowButton" onclick="document.querySelector('#display').value+='4'">4</button>
+    <button type="button" class="rowButton" onclick="document.querySelector('#display').value+='+'">+</button>
+</div>
+
+<div class="row5">
+    <button type="button"class="rowButton" onclick="document.querySelector('#display').value+='3'">3</button>
+    <button type="button" class="rowButton" onclick="document.querySelector('#display').value+='2'">2</button>
+    <button type="button" class="rowButton" onclick="document.querySelector('#display').value+='1'">1</button>
+    <button type="button" class="rowButton" onclick="document.querySelector('#display').value+='-'">-</button>
+</div>
+
+<div class="row6">
+    <button type="button" class="rowButton" onclick="document.querySelector('#display').value+='0'">0</button>
+    <button type="button" class="rowButton" onclick="document.querySelector('#display').value+='00'">00</button>
+    <button type="button" class="rowButton" id="equal" onclick="document.querySelector('#display').value=eval(document.querySelector('#display').value)">=</button>
+    
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
